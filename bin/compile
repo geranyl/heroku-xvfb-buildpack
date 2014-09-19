@@ -26,5 +26,5 @@ mv $CACHE_DIR/$ARCHIVE_NAME $BUILD_DIR/vendor/xvfb
 echo "-----> exporting PATH and LIBRARY_PATH"
 PROFILE_PATH="$BUILD_DIR/.profile.d/xvfb.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:vendor/xvfb/bin"' >> $PROFILE_PATH
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/xvfb/lib"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:vendor/xvfb/Xvfb/bin"' >> $PROFILE_PATH
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/xvfb/Xvfb/lib"' >> $PROFILE_PATH
